@@ -1,0 +1,93 @@
+body{
+  background-color: powderblue;
+}
+#header{
+  padding-top: 8%;
+  padding-bottom:2%;
+  text-align: center;
+  font-style: serif;
+  font-variant: small-caps;
+}
+.nav{
+  list-style-type: none;
+    overflow: hidden;
+    background-color: #333;
+  display: block;
+  padding-top: 1%;
+  padding-right: 2%;
+  font-style: italic;
+  text-align:right;
+  text-decoration:inherit;
+}
+.navi{
+  position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  border: 1px solid #e7e7e7;
+    background-color: #A9A9A9;
+  display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration:none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-right: 1px solid #bbb;
+  }
+.navi:last-child {
+    border-right: none;
+}
+.navi a:active {
+    background-color: #4CAF50;
+}
+.navi a:hover {
+    background-color: #008000;
+}
+.quote{
+  border-style: outset;
+  text-align: center;
+  font-family: cursive;
+  font-style: oblique;
+  font-size: 25px;
+}
+.logo {
+  height: 300px;
+  width:300px;
+  border-radius: 10%;
+}
+#About{
+  padding-top: 1%;
+  text-align: center;
+  font-style: oblique;
+}
+.para{
+  font-family: fantasy;
+  font-weight: 100;
+}
+#skill{
+  text-align: center;
+  font-style: oblique;
+}
+.myskills ul li{
+  list-style: none;
+  font-family: fantasy;
+  font-weight: 100;
+}
+#Co{
+  text-align: center;
+  font-style: oblique;
+}
+#Co ul li {
+  list-style: none;
+  text-align: center;
+}
+.contact{
+  list-style:none;
+  font-family: fantasy;
+  font-weight: 100;
+}
+.mail{
+  text-decoration: none;
+
+}
