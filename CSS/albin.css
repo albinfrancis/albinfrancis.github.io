@@ -8,8 +8,16 @@ html {
 	box-sizing: inherit
 }
 
-
-/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+/* Landing Page */
+.container-full {
+	margin: 0 auto;
+	width: 100%;
+	min-height:100%;
+	background: url('http://www.desktopwallpaperhd.net/wallpapers/7/6/background-homepage-web-wood-opera-media-images-79414.jpg');
+	color:#e7ffe7;
+	overflow:hidden;
+  }
+ 
 
 html {
 	-ms-text-size-adjust: 100%;
@@ -19,6 +27,80 @@ html {
 body {
 	margin: 0
 }
+body {
+	background-color: #222;
+  }
+  #preloader {
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+  }
+  #loader {
+	  display: block;
+	  position: relative;
+	  left: 50%;
+	  top: 50%;
+	  width: 150px;
+	  height: 150px;
+	  margin: -75px 0 0 -75px;
+	  border-radius: 50%;
+	  border: 3px solid transparent;
+	  border-top-color: #9370DB;
+	  -webkit-animation: spin 2s linear infinite;
+	  animation: spin 2s linear infinite;
+  }
+  #loader:before {
+	  content: "";
+	  position: absolute;
+	  top: 5px;
+	  left: 5px;
+	  right: 5px;
+	  bottom: 5px;
+	  border-radius: 50%;
+	  border: 3px solid transparent;
+	  border-top-color: #BA55D3;
+	  -webkit-animation: spin 3s linear infinite;
+	  animation: spin 3s linear infinite;
+  }
+  #loader:after {
+	  content: "";
+	  position: absolute;
+	  top: 15px;
+	  left: 15px;
+	  right: 15px;
+	  bottom: 15px;
+	  border-radius: 50%;
+	  border: 3px solid transparent;
+	  border-top-color: #FF00FF;
+	  -webkit-animation: spin 1.5s linear infinite;
+	  animation: spin 1.5s linear infinite;
+  }
+  @-webkit-keyframes spin {
+	  0%   {
+		  -webkit-transform: rotate(0deg);
+		  -ms-transform: rotate(0deg);
+		  transform: rotate(0deg);
+	  }
+	  100% {
+		  -webkit-transform: rotate(360deg);
+		  -ms-transform: rotate(360deg);
+		  transform: rotate(360deg);
+	  }
+  }
+  @keyframes spin {
+	  0%   {
+		  -webkit-transform: rotate(0deg);
+		  -ms-transform: rotate(0deg);
+		  transform: rotate(0deg);
+	  }
+	  100% {
+		  -webkit-transform: rotate(360deg);
+		  -ms-transform: rotate(360deg);
+		  transform: rotate(360deg);
+	  }
+  }
 
 article,
 aside,
@@ -71,6 +153,7 @@ abbr[title] {
 	text-decoration: underline;
 	text-decoration: underline dotted
 }
+
 
 dfn {
 	font-style: italic
@@ -787,7 +870,93 @@ a {
 	margin-left: auto;
 	margin-right: auto
 }
-
+* {
+	box-sizing: border-box;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+	position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+	display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+	cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+	cursor: pointer;
+	position: absolute;
+	top: 40%;
+	width: auto;
+	padding: 16px;
+	margin-top: -50px;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	-webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+  }
+  
+  
+  /* Container for image text */
+  .caption-container {
+	text-align: center;
+	background-color: #222;
+	padding: 2px 16px;
+	color: white;
+  }
+  
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+	float: left;
+	width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+	opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+	opacity: 1;
+  }
 .content {
 	max-width: 980px
 }
